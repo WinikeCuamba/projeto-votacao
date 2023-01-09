@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+:root {
+  --verde: rgb(3, 216, 3);
+  --branco: white;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+}
+header {
+  background-color: var(--verde);
+  color: white;
+  width: 100vw;
+  border-radius: 0px 0px 3px 3px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.247);
+}
+ 
+header h1 {
+  font-size: 1.7em;
+  text-align: center;
+
+}
+
+main {
+  padding: 5px;
+  margin: 5px;
+}
+
+main h2 {
+  font-size: 1.1em;
+}
+
+main section article {
+  margin: 10px 10px 5px 0px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(199, 199, 199);
+}
+
+main h3.nomeDoCandidato {
+  display: inline-block;
+  margin-right: 75px;
+}
+
+main button.btnDetalhes {
+  border: 0;
+  display: inline-block;
+  margin-left: 75px;
+  background-color: white;
+  width: 20px;
+  height: 5px;
+}
+
+main button.btnDetalhes::after {
+  content: ".";
+  border: 0;
+  background-color: black;
+  width: 60px;
+  height: 5px;
+}
+
+main div.detalhes {
+  display: none;
+}
+
+span.nome, span.idade, span.profissao {
+  color: white;
+}
