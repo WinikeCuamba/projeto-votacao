@@ -25,7 +25,8 @@ header {
 }
  
 header h1 {
-  font-size: 1.7em;
+  padding: 5px;
+  font-size: 1.5em;
   text-align: center;
 
 }
@@ -33,6 +34,7 @@ header h1 {
 main {
   padding: 5px;
   margin: 5px;
+  padding-top: 20px;
 }
 
 main h2 {
@@ -44,35 +46,76 @@ main section article {
   margin-top: 10px;
   padding: 10px;
   border-radius: 5px;
-  background-color: rgb(199, 199, 199);
+  background-color: var(--verde);
+}
+
+main span.candidato {
+  position: relative;
 }
 
 main h3.nomeDoCandidato {
   display: inline-block;
   margin-right: 75px;
 }
-
+/*
 main button.btnDetalhes {
-  border: 0;
   display: inline-block;
   margin-left: 75px;
   background-color: white;
-  width: 20px;
-  height: 5px;
-}
-
-main button.btnDetalhes::after {
-  content: ".";
+  position: absolute;
+  top: 50%;
   border: 0;
-  background-color: black;
-  width: 60px;
-  height: 5px;
+  width: 15px;
+  height: 3px;
+  transform: translate(50%, -50%) rotate(40deg);
+  transform-origin: right;
+  transition: 1s;
 }
 
+main button.btnDetalhes::before {
+  content: " ";
+  position: absolute;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  top: -9px;
+  left: 9px;
+  width: 15px;
+  height: 3px;
+  transform-origin: left;
+  transform: rotate(-60deg);
+  transition: 1s;
+}
+
+main button.btnDetalhes:hover {
+  transform: rotate(0deg);
+}
+
+main button.btnDetalhes::before:hover {
+  transform: rotate(360deg);
+}
 main div.detalhes {
   display: none;
 }
-
+*/
 span.nome, span.idade, span.profissao {
   color: white;
+  font-weight: bold;
 }
+
+
+main a#mesaDeVotacao {
+  background-color: var(--verde);
+  font-weight: bold;
+  color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 10px; 
+  text-decoration: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+
