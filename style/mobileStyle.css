@@ -3,6 +3,7 @@
 :root {
   --verde: rgb(3, 216, 3);
   --branco: white;
+  --verde-escuro: rgb(85, 185, 3);
 }
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -15,23 +16,38 @@ body {
   height: 100vh;
 }
 
+h1, h2, h3 {
+  font-family: 'Times New Roman', Times, serif;
+}
 header {
-  background-color: var(--verde);
+  position: relative;
+  background-color: var(--verde-escuro);
   color: white;
   width: 100vw;
-  border-radius: 0px 0px 3px 3px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.247);
+  height: 40px;
+}
+
+header img#icone-votacao {
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  left: 10px;
+  width: 25px;
+  height: 37px;
 }
 
 header h1 {
-  text-align: center;
+  display: inline-block;
+  margin-left: 60px;
   font-size: 1.5em;
   padding: 5px;
+  padding-top: 5px;
+  height: 45px;
 
 }
 main {
-  margin: 5px;
-  padding: 5px;
+  margin: 10px;
+  padding: 10px;
   margin-top: 15px;
   min-width: 200px;
   min-height: 400px;
@@ -39,30 +55,40 @@ main {
 
 main h2 {
   font-size: 1.2em;
-  text-align: center;
+  text-indent: 5px;
 }
+ main p {
+  color: var(--branco);
+  background-color: var(--verde);
+  padding: 10px;
+  font-weight: 600;
+  margin-right: 20px;
+  border-radius: 5px;
+  text-align: justify;
+ }
 
 main section {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 main section a {
   display: block;
   background-color: var(--verde);
-  color: white;
-  font-size: 1.1em;
+  color: var(--branco);
+  font-size: 1em;
   font-weight: bold;
-  padding: 5px;
+  padding: 10px;
   margin-top: 20px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
   text-decoration: none;
 }
 
 footer {
   display: block;
+  position: static;
   color: white;
-  height: 10vh;
+  height: 70px;
   padding: 10px;
   margin-top: 60px;
   text-align: center;
@@ -70,6 +96,11 @@ footer {
 }
 
 footer p {
+  font-weight: bold;
   margin-top: 10px;
   
+}
+
+footer abbr {
+  text-decoration: none;
 }
