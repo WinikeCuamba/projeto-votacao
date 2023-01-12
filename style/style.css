@@ -29,27 +29,29 @@ header {
   background-color: var(--cor-secundaria);
   color: white;
   width: 100vw;
-  height: 40px;
+  height: 60px;
 }
 
 
 header img#icone-votacao {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 5px;
   display: inline-block;
   margin: 5px;
   height: 20px;
   width: 20px;
-  transform: translate(0%, -75%);
+  transform: translate(0%, -50%);
 }
 
 header h1 {
+  position: absolute ;
   display: inline-block;
+  top: 50%;
   font-size: 1.5em;
   padding: 5px;
   margin-left: 25px;
-  vertical-align: top;
+  transform: translate(0%, -50%);
 }
 
 header menu span.menu-aberto {
@@ -100,6 +102,7 @@ main section#sec1 {
 
 main section#sec2 {
   margin-top: 180px;
+  padding: 5px;
 }
 
 main a {
@@ -109,9 +112,11 @@ main a {
   text-align: center;
   display: block;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  max-width: 350px;
+  height: 45px;
   padding: 10px;
-  margin: 20px;
+  margin: auto;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
@@ -123,6 +128,7 @@ footer {
   width: 100%;
   padding: 15px;
   text-align: center;
+  margin-top: 40px;
   display: block;
   background-color: rgba(0, 0, 0, 0.801);
 }
