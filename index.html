@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css" media="sreen and (min-width: 620)">
-    <link rel="stylesheet" href="style/mobileStyle.css" >
-    <link rel="shortcut icon" href="image/votacao-icone.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet"  href="style/normalDevice.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="style/bigDevice.css" media="screen and (min-width: 1336px)">
+    <link rel="shortcut icon" href="image/icone.png" type="image/x-icon">
     <title>Site de votação</title>
 </head>
 <body>
     <header>
-        <img src="image/votacao-icone.webp"  alt="icone-de-votação" id="icone-votacao"> 
-        <h1>Votação online</h1>
+        <img src="image/icone.png"  alt="icone-de-votação" id="icone-votacao"> 
+        <h1>otação online</h1>
+        <menu>
+            <span class="menu-aberto"></span>
+            <ul>
+                <li>Mesa e votação</li>
+                <li>Ver contagem</li>
+                <li><a href="https://github.com/WinikeCuamba">Meu github</a></li>
+            </ul>
+        </menu>
     </header>
-    <main>
-        
-        <h2>Site de votação</h2>
-        <p>
-            O site de votação fou criado para a facilidade na votação assim pondendo votar a qualquer momento e em qualquer lugal de modo facil e rapido.
-        </p>
-        <section>
+    <main> 
+        <section id="sec1">
+            <h2>Site de votação</h2>
+            <p>
+                O site de votação fou criado para a facilidade na votação assim pondendo votar a qualquer momento e em qualquer lugal de modo facil e rapido.
+            </p>
+        </section>
+         <section id="sec2">
             <a href="html/votar.html">Votar</a>
-            <a href="html/contagem.html">Ver a contagem</a>
         </section>  
     </main> 
     <footer>
         <p>Criado por <abbr title="Desenvolvedor">winike cuamba</abbr></p> 
     </footer>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>

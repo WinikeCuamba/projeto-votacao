@@ -1,0 +1,1 @@
+var menu = window.document.getElementsByClassName("menu-aberto")[0]

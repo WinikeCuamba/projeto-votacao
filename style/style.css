@@ -1,16 +1,20 @@
 @charset "UTF-8";
 
+
 :root {
-  --verde: rgb(3, 216, 3);
-  --branco: white;
-  --verde-escuro: rgb(85, 185, 3);
+  --cor-principal: #03D803;
+  --var-cor-principal: #1CFF1C;
+  --cor-secundaria: #D9026D;
+  --var-cor-secundaria: #8C0046;
 }
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 
 body {
   height: 100vh;
@@ -22,7 +26,7 @@ h1, h2, h3 {
 
 header {
   position: relative;
-  background-color: var(--verde-escuro);
+  background-color: var(--cor-secundaria);
   color: white;
   width: 100vw;
   height: 40px;
@@ -31,25 +35,94 @@ header {
 
 header img#icone-votacao {
   position: absolute;
+  top: 50%;
+  left: 5px;
   display: inline-block;
-  top: 0px;
-  left: 10px;
-  width: 25px;
-  height: 37px;
+  margin: 5px;
+  height: 20px;
+  width: 20px;
+  transform: translate(0%, -75%);
 }
 
 header h1 {
   display: inline-block;
-  margin-left: 60px;
   font-size: 1.5em;
   padding: 5px;
-  padding-top: 5px;
-  height: 45px;
-  
+  margin-left: 25px;
+  vertical-align: top;
 }
 
+header menu span.menu-aberto {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  background-color: white;
+  text-align: right;
+  width: 25px;
+  height: 3px;
+  transform: translateY(-50%);
+}
+
+header menu span.menu-aberto::before {
+  display: block;
+  position: absolute;
+  content: " ";
+  top: -7px;
+  background-color: white;
+  width: 25px;
+  height: 3px;
+}
+
+header menu span.menu-aberto::after {
+  display: block;
+  position: absolute;
+  content: " ";
+  background-color: white;
+  top: 7px;
+  width: 25px;
+  height: 3px;
+}
+
+header ul {
+  display: none;
+}
+
+main section#sec1 {
+  background-color: white;
+  color: white;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.168);
+  line-height: 30px;
+  margin-top: 50px;
+  height: 200px;
+  padding: 10px;
+  background-color: var(--cor-secundaria);
+}
+
+main section#sec2 {
+  margin-top: 180px;
+}
+
+main a {
+  color: white;
+  background-color: var(--var-cor-secundaria);
+  border: 1px solid var(--cor-secundaria);
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
 
 footer {
+  position: absolute;
+  top: 98%;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
   display: block;
   background-color: rgba(0, 0, 0, 0.801);
 }
