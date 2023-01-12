@@ -12,14 +12,20 @@
 </head>
 <body>
     <header>
-        <img src="image/icone.png"  alt="icone-de-votação" id="icone-votacao"> 
+        <img src="image/icone.png"  alt="icone de votação" id="icone-votacao"> 
         <h1>otação online</h1>
         <menu>
-            <span class="menu-aberto"></span>
-            <ul>
-                <li>Mesa e votação</li>
-                <li>Ver contagem</li>
-                <li><a href="https://github.com/WinikeCuamba">Meu github</a></li>
+            <!-- Indicador do menu -->
+            <span id="menuIndicador" onclick="funcMenu()">
+                <span id="lCimaMenuIndicador"></span>
+                <span id="lMeioMenuIndicador"></span>
+                <span id="lBaixoMenuIndicador"></span>
+            </span>
+            <!-- Menu -->
+            <ul class="menu-aberto">
+                <li><a href="#">Home</a></li>
+                <li><a href="https://github.com/WinikeCuamba" target="_blank">Meu github</a></li>
+                <li><a href="html/votar.html">Mesa e votação</a></li>
             </ul>
         </menu>
     </header>
@@ -37,6 +43,7 @@
     <footer>
         <p>Criado por <abbr title="Desenvolvedor">winike cuamba</abbr></p> 
     </footer>
-    <script src="scripts/menu.js"></script>
+    <script src="scripts/menu.js" ></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

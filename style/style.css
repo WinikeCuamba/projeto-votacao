@@ -23,7 +23,9 @@ body {
 h1, h2, h3 {
   font-family: 'Times New Roman', Times, serif;
 }
-
+a {
+  text-decoration: none;
+}
 header {
   position: relative;
   background-color: var(--cor-secundaria);
@@ -54,54 +56,92 @@ header h1 {
   transform: translate(0%, -50%);
 }
 
-header menu span.menu-aberto {
+header meu span #menuIndicador {
+  width: 100vh;
+}
+
+header menu span#lMeioMenuIndicador {
+  background-color: white;
   position: absolute;
   top: 50%;
   left: 90%;
-  background-color: white;
-  text-align: right;
   width: 25px;
   height: 3px;
+  z-index: 11;
   transform: translateY(-50%);
 }
 
-header menu span.menu-aberto::before {
-  display: block;
-  position: absolute;
-  content: " ";
-  top: -7px;
+header menu span#lCimaMenuIndicador {
   background-color: white;
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 90%;
   width: 25px;
   height: 3px;
+  transition: 1s;
+  transform: translateY(-50%);
+  z-index: 11;
 }
 
-header menu span.menu-aberto::after {
-  display: block;
-  position: absolute;
-  content: " ";
+header menu span#lBaixoMenuIndicador {
   background-color: white;
-  top: 7px;
+  position: absolute;
+  display: block;
+  top: 60%;
+  left: 90%;
   width: 25px;
   height: 3px;
+  transition: 1s;
+  transform: translateY(-50%);
+  z-index: 11;
+
 }
 
-header ul {
+header ul.menu-aberto {
+  background-color: #8c0046e2;
   display: none;
+  position: fixed;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  width: 102vw;
+  z-index: 10;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
 }
+
+header ul li {
+  margin-top: 80px;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  display: block;
+  list-style-type: none;
+  text-align: center;
+
+}
+
+menu li a {
+  color: white;
+}
+
 
 main section#sec1 {
   background-color: white;
   color: white;
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.168);
   line-height: 30px;
-  margin-top: 50px;
+  margin-top: 70px;
   height: 200px;
   padding: 10px;
   background-color: var(--cor-secundaria);
 }
 
 main section#sec2 {
-  margin-top: 180px;
+  margin-top: 220px;
   padding: 5px;
 }
 
@@ -114,8 +154,8 @@ main a {
   font-weight: bold;
   font-size: 1.3em;
   max-width: 350px;
-  height: 45px;
-  padding: 10px;
+  height: 50px;
+  padding: 15px;
   margin: auto;
   border-radius: 5px;
   text-align: center;
@@ -128,7 +168,7 @@ footer {
   width: 100%;
   padding: 15px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
   display: block;
   background-color: rgba(0, 0, 0, 0.801);
 }
