@@ -1,32 +1,50 @@
 var menu = document.querySelector(".menu-aberto")
-var menuIndicador = document.querySelector("#menuIndicador")
 var lMenuCima = document.getElementById("lCimaMenuIndicador")
+var lMenuMeio = document.getElementById("lMeioMenuIndicador")
 var lMenuBaixo = document.getElementById("lBaixoMenuIndicador")
+
+
+const mudarRotacao = (elemento, rotacao) => {
+  elemento.style.rotate = `${rotacao}deg`
+}
+
+const mudarPosicaoTop = (elemento, top) => {
+  elemento.style.top = `${top}%`
+}
+
+const mudarVisualizacao = (elemento, display) => {
+  elemento.style.display = `${display}`
+}
 
 const funcMenu = () => {
   if (lMenuCima.style.rotate == "0deg" && lMenuBaixo.style.rotate == "0deg" ) {
     // Rotaçao das linhas quando o meu esta aberto
-    lMenuCima.style.rotate = "45deg"
-    lMenuBaixo.style.rotate = "315deg"
+    mudarRotacao(lMenuCima, 45)
+    mudarRotacao(lMenuBaixo, 315)
 
     // Possicionamento das linha quando o menu esta aberto
-    lMenuCima.style.top = "50%"
-    lMenuBaixo.style.top = "50%"
+    mudarPosicaoTop(lMenuCima, 50)
+    mudarPosicaoTop(lMenuBaixo, 50)
 
     // Aparecimento do menu
-    menu.style.display = "block"
+    mudarVisualizacao(menu, "block")
+
+    // Desaparecimento da linha do meio
+    mudarVisualizacao(lMenuMeio, "none")
+
   } else {
     // Rotaçao padrão das linhas
-    lMenuCima.style.rotate = "0deg"
-    lMenuBaixo.style.rotate = "0deg"
+    mudarRotacao(lMenuCima, 0)
+    mudarRotacao(lMenuBaixo, 0)
 
     // Possicionamento padrão das linha
-    lMenuCima.style.top = "60%"
-    lMenuBaixo.style.top = "40%"
+    mudarPosicaoTop(lMenuCima, 40)
+    mudarPosicaoTop(lMenuBaixo, 60)    
 
     // Desaparecimento do menu
-    menu.style.display = "none"
+    mudarVisualizacao(menu, "none")
 
+   // Aparecimento da linha do meio
+   mudarVisualizacao(lMenuMeio, "block")
   }
-
 }
