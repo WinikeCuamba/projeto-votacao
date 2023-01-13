@@ -68,6 +68,7 @@ header menu span#lMeioMenuIndicador {
   width: 25px;
   height: 3px;
   z-index: 11;
+  transition:  0.5s;
   transform: translateY(-50%);
 }
 
@@ -79,7 +80,7 @@ header menu span#lCimaMenuIndicador {
   left: 90%;
   width: 25px;
   height: 3px;
-  transition: 1s;
+  transition: 0.5s;
   transform: translateY(-50%);
   z-index: 11;
 }
@@ -92,9 +93,9 @@ header menu span#lBaixoMenuIndicador {
   left: 90%;
   width: 25px;
   height: 3px;
-  transition: 1s;
-  transform: translateY(-50%);
   z-index: 11;
+  transition: 0.5s;
+  transform: translateY(-50%);
 
 }
 
@@ -110,7 +111,7 @@ header ul.menu-aberto {
   z-index: 10;
   overflow: hidden;
   transform: translate(-50%, -50%);
-  transition: all 1s;
+  transition: all 0.3s;
 }
 
 header ul li {
@@ -154,7 +155,7 @@ main a {
   font-weight: bold;
   font-size: 1.3em;
   max-width: 350px;
-  height: 50px;
+  height: 60px;
   padding: 15px;
   margin: auto;
   border-radius: 5px;
@@ -165,11 +166,11 @@ main a {
 footer {
   position: absolute;
   top: 98%;
+  display: block;
   width: 100%;
   padding: 15px;
   text-align: center;
-  margin-top: 60px;
-  display: block;
+  margin-top: 100px;
   background-color: rgba(0, 0, 0, 0.801);
 }
 
