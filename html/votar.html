@@ -5,16 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style/votar.css">
-  <link rel="shortcut icon" href="../image/icone-votacao.webp" type="image/x-icon">
+  <link rel="shortcut icon" href="../image/icone.png" type="image/x-icon">
   <title>Site de votação</title>
 </head>
 <body>
   <header>
-    <h1>Votação online</h1>
-  </header>
+    <img src="../image/icone.png"  alt="icone de votação" id="icone-votacao"> 
+    <h1>otação online</h1>
+    <menu>
+        <!-- Indicador do menu -->
+        <span id="menuIndicador" onclick="funcMenu()">
+            <span id="lCimaMenuIndicador"></span>
+            <span id="lMeioMenuIndicador"></span>
+            <span id="lBaixoMenuIndicador"></span>
+        </span>
+        <!-- Menu -->
+        <ul class="menu-aberto">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="https://github.com/WinikeCuamba" target="_blank">Meu github</a></li>
+            <li><a href="html/votar.html">Mesa e votação</a></li>
+        </ul>
+    </menu>
+</header>
   <main>
-    <h2>Mesa de votação</h2>
     <section>
+      <h2>Mesa de votação</h2>
       <article>
         <span class="candidato"> 
           <h3 class="nomeDoCandidato">Winike</h3> 
@@ -50,8 +65,12 @@
           Profissão <span class="profissao">Medica</span> <br>
         </div>
       </article>
-       <a href="#" id="mesaDeVotacao">Mesa de votação</a>    
+      <a href= "#" id="mesaDeVotacao">Mesa de votação</a>    
     </section>
   </main>
+  <footer>
+    <p>Criado por <abbr title="Desenvolvedor">winike cuamba</abbr></p> 
+  </footer>
+  <script src="../scripts/menu.js"></script>
 </body>
 </html>

@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 :root {
-  --verde: rgb(3, 216, 3);
-  --branco: white;
+  --cor-principal: #03D803;
+  --var-cor-principal: #1CFF1C;
+  --cor-secundaria: #D9026D;
+  --var-cor-secundaria: #8C0046;
 }
 
 * {
@@ -16,37 +18,142 @@ body {
   height: 100vh;
 
 }
+
+a {
+  text-decoration: none;
+}
 header {
-  background-color: var(--verde);
+  position: relative;
+  background-color: var(--cor-secundaria);
   color: white;
   width: 100vw;
-  text-align: center;
-  border-radius: 0px 0px 3px 3px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.247);
-}
- 
-header h1 {
-  padding: 5px;
-  font-size: 1.5em;
-  height: 45px;
+  height: 60px;
 }
 
-main {
-  padding: 5px;
+
+header img#icone-votacao {
+  position: absolute;
+  top: 45%;
+  left: 5px;
+  display: inline-block;
   margin: 5px;
+  height: 20px;
+  width: 20px;
+  transform: translate(0%, -50%);
+}
+
+header h1 {
+  position: absolute ;
+  display: inline-block;
+  top: 50%;
+  font-size: 1.5em;
+  padding: 5px;
+  margin-left: 25px;
+  transform: translate(0%, -50%);
+}
+
+header meu span #menuIndicador {
+  width: 100vh;
+}
+
+header menu span#lMeioMenuIndicador {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  width: 25px;
+  height: 3px;
+  z-index: 11;
+  transition:  0.5s;
+  transform: translateY(-50%);
+}
+
+header menu span#lCimaMenuIndicador {
+  background-color: white;
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 90%;
+  width: 25px;
+  height: 3px;
+  transition: 0.5s;
+  transform: translateY(-50%);
+  z-index: 11;
+}
+
+header menu span#lBaixoMenuIndicador {
+  background-color: white;
+  position: absolute;
+  display: block;
+  top: 60%;
+  left: 90%;
+  width: 25px;
+  height: 3px;
+  z-index: 11;
+  transition: 0.5s;
+  transform: translateY(-50%);
+
+}
+
+header ul.menu-aberto {
+  background-color: #8c0046e2;
+  display: none;
+  position: fixed;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  width: 102vw;
+  z-index: 10;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+header ul li {
+  margin-top: 80px;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  display: block;
+  list-style-type: none;
+  text-align: center;
+
+}
+
+menu li a {
+  color: white;
+}
+
+
+
+main {
+  position: relative;
+  padding: 5px;
+  margin: auto;
+  max-width: 400px;
   padding-top: 20px;
 }
 
 main h2 {
-  font-size: 1.1em;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  margin-top: 15px;
+  font-size: 1.2em;
 }
 
 main section article {
+  background-color: var(--cor-secundaria);
   margin: 10px 10px 5px 0px;
-  margin-top: 10px;
+  max-width: 400px;
+  height: 120px;
   padding: 10px;
+  margin: auto;
+  margin-top: 30px;
+  overflow: hidden;
   border-radius: 5px;
-  background-color: var(--verde);
+  transition: all 1s;
 }
 
 main span.candidato {
@@ -57,47 +164,8 @@ main h3.nomeDoCandidato {
   display: inline-block;
   margin-right: 75px;
 }
-/*
-main button.btnDetalhes {
-  display: inline-block;
-  margin-left: 75px;
-  background-color: white;
-  position: absolute;
-  top: 50%;
-  border: 0;
-  width: 15px;
-  height: 3px;
-  transform: translate(50%, -50%) rotate(40deg);
-  transform-origin: right;
-  transition: 1s;
-}
 
-main button.btnDetalhes::before {
-  content: " ";
-  position: absolute;
-  background-color: white;
-  display: inline-block;
-  position: relative;
-  top: -9px;
-  left: 9px;
-  width: 15px;
-  height: 3px;
-  transform-origin: left;
-  transform: rotate(-60deg);
-  transition: 1s;
-}
 
-main button.btnDetalhes:hover {
-  transform: rotate(0deg);
-}
-
-main button.btnDetalhes::before:hover {
-  transform: rotate(360deg);
-}
-main div.detalhes {
-  display: none;
-}
-*/
 span.nome, span.idade, span.profissao {
   color: white;
   font-weight: bold;
@@ -105,17 +173,113 @@ span.nome, span.idade, span.profissao {
 
 
 main a#mesaDeVotacao {
-  background-color: var(--verde);
-  font-weight: bold;
+  background-color: var(--var-cor-secundaria);
+  border: 1px solid var(--cor-secundaria);
   color: white;
-  display: block;
-  padding: 10px;
-  border-radius: 10px; 
-  text-decoration: none;
   text-align: center;
-  margin-top: 30px;
+  display: block;
+  font-weight: bold;
+  font-size: 1.3em;
+  max-width: 350px;
+  height: 60px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
 }
 
+footer {
+  position: absolute;
+  top: 98%;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.801);
+}
 
+footer p {
+  font-weight: bold;
+  color: white; 
+}
 
+footer abbr {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  header span#menuIndicador {
+    display: none;
+    position: relative;
+  }
+  header ul.menu-aberto {
+    background-color: transparent;
+    display: block !important; 
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    height: 200px;
+    width: 400px;
+  }
+  
+  header ul.menu-aberto li {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-left: 15px;
+    text-align: left;
+  }
+  header ul.menu-aberto li:hover {
+    background-color: var(--var-cor-secundaria);
+  }
+  
+  main {
+    margin-top: 50px;
+    max-width: 710px;
+    padding: 0;
+  }
+  main h2 {
+    left: 35%;
+    top: -5%;
+  }
+  
+  main article {
+    display: inline-block;
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  main a#mesaDeVotacao {
+    margin-top: 80px;
+  }
+  footer {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  header ul.menu-aberto {
+    left: 85%;
+  }
+  
+  main {
+    max-width: 1300px;
+  }
+
+  main article {
+    min-width: 420px;
+  }
+  main a#mesaDeVotacao {
+    margin-top: 200px;
+    height: 65px;
+    width: 500px;
+    padding: 20px;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+}
 
