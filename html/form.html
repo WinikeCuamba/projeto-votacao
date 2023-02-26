@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../style/form.css">
+   <link rel="shortcut icon" href="../image/icone.png" type="image/x-icon">
    <title>Formulario de Votaçãoo</title>
 </head>
 <body>
@@ -12,21 +13,25 @@
    <form action="#" method="post" autocomplete="on" class="formulario">
       <fieldset id="user-name"> 
          <label for="Inome">Nome</label><br>
-         <input type="text" name="nome" id="Inome" autocomplete="name" placeholder="Ex: Winike" required>
+         <input type="text" name="nome" id="Inome" autocomplete="name" placeholder="Ex: Winike" minlength="4" maxlength="30" required>
       </fieldset>
       <fieldset id="user-age">    
          <label for="Iidade">Idade</label><br>
-         <input type="number" name="idade" id="Iidade" autocomplete="cc-number" placeholder="Ex: 25" required>
+         <input type="number" name="idade" id="Iidade" autocomplete="cc-number" placeholder="Ex: 25" min="0" max="120" required>
       </fieldset>
       <fieldset id="user-chose">
-         <label for="candidato1">Winike</label> 
-         <input type="radio" name="candidato" id="candidato1">
-         <br>
-         <label for="candidato2">Francisco</label>
-         <input type="radio" name="candidato" id="candidato2">
-         <br>
-         <label for="candidato3">Maria</label>
-         <input type="radio" name="candidato" id="candidato3">
+         <div class="candidato1 candidato">
+            <label for="candidato1" class="label-candidato">Winike</label> 
+            <input type="radio" name="candidato" id="candidato1" class="radio-cadidato">
+         </div>
+         <div class="candidato2 candidato">
+            <label for="candidato2" class="label-candidato">Francisco</label>
+            <input type="radio" name="candidato" id="candidato2" class="radio-cadidato">
+         </div>
+         <div class="candidato3 candidato">
+            <label for="candidato3" class="label-candidato">Maria</label>
+            <input type="radio" name="candidato" id="candidato3" class="radio-cadidato">
+         </div>
       </fieldset>
       <br>
       <button class="btn-submeter">Votar</button>

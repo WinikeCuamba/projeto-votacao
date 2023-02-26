@@ -4,6 +4,7 @@
    --cor-secundaria: #960080;
    --var-cor-secundaria: #8C0046;
    --background-color: #2d0042;
+   --color-div-candidato: var(--var-cor-secundaria);
 }
 
 ::-webkit-inner-spin-button {
@@ -44,6 +45,8 @@ input {
    margin-bottom: 5px;
    transition: all 0.5s ease-in-out;
 }
+
+
 .title {
    color: white;
    text-align: center;
@@ -57,7 +60,7 @@ input {
    color: white;
    width: 35vw;
    height: 45vh;
-   background-color: var(--var-cor-secundaria);
+   background-color: var(--color-div-candidato);
    margin: auto;
    margin-top: 50px;
    padding: 15px;
@@ -79,14 +82,15 @@ input {
 }
 
 #user-chose {
-   width: 90%;
+   width: 100%;
    height: 60px;
    margin: 5px;
-   margin-top: 5px;
+   margin-top: 15px;
 }
 
 #Inome {
    font-size: 0.9em;
+   font-weight: 500;
    width: 97%;
    height: 40px;
    border-radius: 10px;
@@ -97,13 +101,14 @@ input {
    background-color: rgb(184, 184, 184);
 }
 
-
 #Inome:focus::-webkit-input-placeholder {
    color: transparent;
    transition: 1s;
 }
 
 #Iidade {
+   font-weight: 500;
+
    font-size: 0.9em;
    width: 97%;
    height: 40px;
@@ -120,6 +125,15 @@ input {
    color: transparent;
    transition: 1s;
 } 
+
+.candidato {
+   display: inline-block;
+   margin-left: 15px;
+   padding: 7px;
+   border-radius: 5px;
+   background-color: var(--background-color);
+}
+
 
 .btn-submeter {
    position: absolute;
