@@ -1,11 +1,18 @@
 @charset "UTF-8";
 
 :root {
-  --cor-principal: #03D803;
-  --var-cor-principal: #1CFF1C;
-  --cor-secundaria: #D9026D;
+  --cor-secundaria: #890095;
   --var-cor-secundaria: #8C0046;
+  --background-color: #2d0042;
 }
+
+::-webkit-scrollbar {
+  background-color: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--cor-secundaria);
+}
+
 
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -16,7 +23,7 @@
 
 body {
   height: 100vh;
-
+  background-image: linear-gradient(to bottom right, var(--background-color) 20%, var(--cor-secundaria));
 }
 
 a {
@@ -52,7 +59,7 @@ header h1 {
   transform: translate(0%, -50%);
 }
 
-header meu span #menuIndicador {
+header menu span #menuIndicador {
   width: 100vh;
 }
 
@@ -137,6 +144,7 @@ main {
 
 main h2 {
   position: absolute;
+  color: white;
   top: 0;
   left: 5%;
   margin-top: 15px;
@@ -144,7 +152,7 @@ main h2 {
 }
 
 main section article {
-  background-color: var(--cor-secundaria);
+  background-color: var(--var-cor-secundaria);
   margin: 10px 10px 5px 0px;
   max-width: 400px;
   height: 120px;
@@ -152,7 +160,7 @@ main section article {
   margin: auto;
   margin-top: 30px;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: all 1s;
 }
 
@@ -185,7 +193,7 @@ main a#mesaDeVotacao {
   padding: 15px;
   margin: auto;
   margin-top: 100px;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
   text-decoration: none;
 }

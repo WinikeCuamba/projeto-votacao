@@ -3,7 +3,7 @@
 :root {
   --cor-principal: #03D803;
   --var-cor-principal: #1CFF1C;
-  --cor-secundaria: #D9026D;
+  --cor-secundaria: #890095;
   --var-cor-secundaria: #8C0046;
 }
 
@@ -43,7 +43,7 @@ main {
 
 main section#sec1 {
   margin-top: 40px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 main section#sec2 {
   margin-top: 100px;
