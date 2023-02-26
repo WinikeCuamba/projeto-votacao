@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
 :root {
-  --cor-secundaria: #890095;
-  --var-cor-secundaria: #8C0046;
-  --background-color: #2d0042;
+   --color1: #890095;
+   --color2: #8C0046;
+   --color3: #2d0042;
 }
 
 ::-webkit-scrollbar {
-  background-color: var(--background-color);
+  background-color: var( --color3);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--cor-secundaria);
+  background-color: var( --color1);
 }
 
 
@@ -23,7 +23,7 @@
 
 body {
   height: 100vh;
-  background-image: linear-gradient(to bottom right, var(--background-color) 20%, var(--cor-secundaria));
+  background-image: linear-gradient(to bottom right, var( --color3) 20%, var( --color1));
 }
 
 a {
@@ -31,7 +31,7 @@ a {
 }
 header {
   position: relative;
-  background-color: var(--cor-secundaria);
+  background-color: var( --color1);
   color: white;
   width: 100vw;
   height: 60px;
@@ -152,7 +152,7 @@ main h2 {
 }
 
 main section article {
-  background-color: var(--var-cor-secundaria);
+  background-color: var( --color2);
   margin: 10px 10px 5px 0px;
   max-width: 400px;
   height: 120px;
@@ -181,8 +181,8 @@ span.nome, span.idade, span.profissao {
 
 
 main a#mesaDeVotacao {
-  background-color: var(--var-cor-secundaria);
-  border: 1px solid var(--cor-secundaria);
+  background-color: var( --color2);
+  border: 1px solid var( --color1);
   color: white;
   text-align: center;
   display: block;
@@ -240,7 +240,7 @@ footer abbr {
     text-align: left;
   }
   header ul.menu-aberto li:hover {
-    background-color: var(--var-cor-secundaria);
+    background-color: var( --color2);
   }
   
   main {

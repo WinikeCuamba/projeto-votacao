@@ -1,10 +1,8 @@
 @charset "UTF-8";
 
 :root {
-  --cor-principal: #03D803;
-  --var-cor-principal: #1CFF1C;
-  --cor-secundaria: #890095;
-  --var-cor-secundaria: #8C0046;
+  --color1: #890095;
+  --color2: #8C0046;
 }
 
 header span#menuIndicador {
@@ -28,7 +26,7 @@ header ul.menu-aberto li {
   text-align: left;
 }
 header ul.menu-aberto li:hover {
-  background-color: var(--var-cor-secundaria);
+  background-color: var(--color2);
 }
 
 main {
