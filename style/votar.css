@@ -22,7 +22,8 @@
 }
 
 body {
-  height: 100vh;
+  min-width: 100vw;
+  height: 130vh;
   background-image: linear-gradient(to bottom right, var( --color3) 20%, var( --color1));
 }
 
@@ -33,7 +34,8 @@ header {
   position: relative;
   background-color: var( --color1);
   color: white;
-  width: 100vw;
+  width:100vw;
+  margin: 0;
   height: 60px;
 }
 
@@ -60,7 +62,7 @@ header h1 {
 }
 
 header menu span #menuIndicador {
-  width: 100vh;
+  width: 100vw;
 }
 
 header menu span#lMeioMenuIndicador {
@@ -202,7 +204,7 @@ footer {
   position: absolute;
   top: 98%;
   display: block;
-  width: 100%;
+  width: 99%;
   padding: 15px;
   text-align: center;
   margin-top: 200px;
