@@ -159,6 +159,12 @@ input {
    height: 15%;
 }
 
+@media screen and (min-width: 768px) {
+   body {
+      background-color: red;
+   } 
+   
+}
 @media screen and (max-width: 1336px) {
    .formulario {
       width: 60vw;

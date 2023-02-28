@@ -7,6 +7,7 @@
 }
 
 ::-webkit-scrollbar {
+  display: none;
   background-color: var( --color3);
 }
 ::-webkit-scrollbar-thumb {
@@ -23,7 +24,7 @@
 
 body {
   min-width: 100vw;
-  height: 130vh;
+  height: 120vh;
   background-image: linear-gradient(to bottom right, var( --color3) 20%, var( --color1));
 }
 
@@ -32,7 +33,7 @@ a {
 }
 header {
   position: relative;
-  background-color: var( --color1);
+  background-color: var( --color2);
   color: white;
   width:100vw;
   margin: 0;
@@ -105,7 +106,7 @@ header menu span#lBaixoMenuIndicador {
 }
 
 header ul.menu-aberto {
-  background-color: #8c0046e2;
+  background-color: var(--color2);
   display: none;
   position: fixed;
   padding: 10px;
